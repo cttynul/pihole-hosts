@@ -1,13 +1,6 @@
-<html>
-  <head>
-    <title>NSA Hosts File</title>
-  </head>
-  <body>
-    <?php
-      $hosts_file = file_get_contents("https://raw.githubusercontent.com/cttynul/NSABlocklist/master/HOSTS");
-      $pattern = '/ *0\.0\.0\.0 */';
-      $replacement = "";
-      echo preg_replace($pattern, $replacement, $hosts_file);
-    ?>
-  </body>
-</html>
+<?php
+  $hosts_file = file_get_contents("https://raw.githubusercontent.com/cttynul/NSABlocklist/master/HOSTS");
+  $pattern = '/ *0\.0\.0\.0 */';
+  $replacement = "";
+  echo preg_replace($pattern, $replacement, $hosts_file);
+?>
