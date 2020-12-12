@@ -1,6 +1,7 @@
 <?php
     if(isset($_GET['m'])){
       $url = "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/" . $_GET['m'] . "/hosts";
+    }
     else{
       $url = "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts";
     }
